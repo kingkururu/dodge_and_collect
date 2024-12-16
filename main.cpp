@@ -1,16 +1,13 @@
 //
-//  main.cpp
-//  sfmlgame1
-//
 //  Created by Sunmyoung Yun on 2024/01/04.
 //
 
 #include "game.hpp"
 
-int main( ){
+int main(){
     GameManager makeGame;
 
-    makeGame.runGame( );
+    makeGame.runGame();
     
     return 0; 
 }
