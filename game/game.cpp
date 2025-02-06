@@ -131,7 +131,7 @@ void GameManager::createAssets(){
     rain->setAnimation(rainAnimRect);
     rain->setRects(0); 
     
-    Coin* coin = new Coin({static_cast<float>(std::rand() % GameComponents.screenWidth), 0}, sf::Vector2f{0.03, 0.03}, "assets/sprites/coin.png"); 
+    Coin* coin = new Coin({static_cast<float>(std::rand() % GameComponents.screenWidth), 0}, sf::Vector2f{1.0, 1.0}, "assets/sprites/coin.png"); 
     coins.push_back(coin);
     
     for(int i = 0; i < 3; ++i){
