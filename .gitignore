@@ -2,6 +2,5 @@
 *.log
 /node_modules/
 /build/
-echo "run" >> .gitignore
-echo "*.o" >> .gitignore
-echo "*.exe" >> .gitignore  
+run
+*.o
