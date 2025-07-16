@@ -42,8 +42,8 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/dodge_and_collect_sfml_game
-   cd dodge_and_collect_sfml_game
+   git clone https://github.com/kingkururu/dodge_and_collect
+   cd dodge_and_collect (location will be different)
    ```
 
 2. **Build the game**:
