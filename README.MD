@@ -53,7 +53,7 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
 
 3. **Run the game**:
    ```bash
-   ./ASAtut
+   ./run
    ```
 
 ### Alternative Setup (macOS with Homebrew)
