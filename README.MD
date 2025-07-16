@@ -1,6 +1,6 @@
 # Dodge and Collect 🎮
 
-A 2D dodge and collect game built with C++ and SFML, featuring dynamic sprite animations and challenging gameplay mechanics.
+A 2D dodge and collect game built with C++ and SFML, featuring dynamic sprite animations and simple gameplay mechanics.
 
 ## GAME PLAY SCREENSHOTS
 
