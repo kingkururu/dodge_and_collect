@@ -1,4 +1,4 @@
-# Dodge and Collect 🎮
+# Dodge and Collect 
 
 A 2D dodge and collect game built with C++ and SFML, featuring dynamic sprite animations and simple gameplay mechanics.
 
@@ -8,11 +8,11 @@ A 2D dodge and collect game built with C++ and SFML, featuring dynamic sprite an
 ![Gameplay Screenshot 2](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/Screenshot2.png)
 ![Gameplay Screenshot 3](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/screenshot3.png)
 
-## 🎯 Objective
+## Objective
 
 Collect as many coins as possible while avoiding falling rain and lightning bolts. You start with 5 hearts, and the challenge intensifies as the game progresses with decreasing spawn intervals!
 
-## 🎮 How to Play
+## How to Play
 
 - **Movement**: Use `A` key to move left, `D` key to move right
 - **Goal**: Collect coins (100 points each) while avoiding obstacles
@@ -22,7 +22,7 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
   - Lightning strikes: -3 hearts
 - **Restart**: Press `B` after game over to play again
 
-## 🛠️ Technical Features
+## Technical Features
 
 - **Engine**: SFML (Simple and Fast Multimedia Library)
 - **Language**: C++
@@ -31,7 +31,7 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
 - **Audio**: Integrated sound effects and background music
 - **Sprites**: Animated character sprites with frame-based animation
 
-## 🚀 Building & Running
+## Building & Running
 
 ### Prerequisites
 - SFML 2.x library
@@ -73,7 +73,7 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
    export PATH="/opt/homebrew/opt/sfml@2/bin:$PATH"
    ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 dodge_and_collect_sfml_game/
@@ -85,7 +85,7 @@ dodge_and_collect_sfml_game/
 └── Makefile       # Build configuration
 ```
 
-## 🎨 Assets
+## Assets
 
 ### Sprites
 - **Main player sprite**: [Free Pixel Art Tiny Hero Sprites](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/)
@@ -102,7 +102,7 @@ dodge_and_collect_sfml_game/
 ### Font
 - **Pixel font**: [LLPixel Font](https://www.dafont.com/llpixel.font)
 
-## 🎯 Key Learning Outcomes
+## Key Learning Outcomes
 
 - Game development fundamentals with SFML
 - Object-oriented programming in C++
@@ -113,7 +113,7 @@ dodge_and_collect_sfml_game/
 - Sprite animation and frame management
 - Entity lifetime management and pooling systems
 
-## 🎮 Game Mechanics
+## Game Mechanics
 
 This is a standard dodge and collect game featuring:
 - **Dynamic Difficulty**: Lightning bolts and rain spawn at decreasing time intervals
