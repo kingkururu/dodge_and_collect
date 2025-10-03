@@ -24,11 +24,8 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
 
 ## Technical Features
 
-- **Engine**: SFML (Simple and Fast Multimedia Library)
-- **Language**: C++
 - **Architecture**: Object-oriented design with sprite animation system
-- **Physics**: Custom collision detection and entity management (raycast precollision check and AABB)
-- **Audio**: Integrated sound effects and background music
+- **Physics**: Custom collision detection and entity management (AABB only)
 - **Sprites**: Animated character sprites with frame-based animation
 
 ## Building & Running
@@ -77,11 +74,11 @@ Collect as many coins as possible while avoiding falling rain and lightning bolt
 
 ```
 dodge_and_collect_sfml_game/
-├── assets/        # Game assets (sprites, sounds)
+├── assets/        # Game assets 
 ├── game/          # Core logics
 ├── main           # Entry point
-├── .gitignore     # Entry point
-├── ReadMe         # Entry point
+├── .gitignore     
+├── ReadMe         
 └── Makefile       # Build configuration
 ```
 
@@ -100,7 +97,7 @@ dodge_and_collect_sfml_game/
 - **Background music**: [8-bit Gaming Music](https://pixabay.com/music/video-games-flat-8-bit-gaming-music-instrumental-211547/)
 
 ### Font
-- **Pixel font**: [LLPixel Font](https://www.dafont.com/llpixel.font)
+- **Arial font**: [Arial Font](https://font.download/font/arial)
 
 ## Key Learning Outcomes
 
@@ -111,12 +108,3 @@ dodge_and_collect_sfml_game/
 - Collision detection algorithms
 - Audio system integration
 - Sprite animation and frame management
-- Entity lifetime management and pooling systems
-
-## Game Mechanics
-
-This is a standard dodge and collect game featuring:
-- **Dynamic Difficulty**: Lightning bolts and rain spawn at decreasing time intervals
-- **Scoring System**: 1 coin = 100 points
-- **Health Management**: Strategic gameplay with limited hearts
-- **Responsive Controls**: Smooth left/right movement mechanics
