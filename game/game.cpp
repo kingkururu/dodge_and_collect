@@ -145,11 +145,9 @@ void GameManager::createAssets(){
     heart->setAnimation(heartAnimRect);
     heart->setRects(0);  
 
-    scoreText = new TextClass({15, 50}, 50, sf::Color::Black, "assets/fonts/pixelFont.ttf", "score: " + std::to_string(GameScore.score));
+    scoreText = new TextClass({15, 50}, 50, sf::Color::Black, "assets/fonts/arial.ttf", "score: " + std::to_string(GameScore.score));
     
-    for(int i = 0; i < 14; ++i){
-        playerAnimRect.push_back(sf::IntRect{43 * i, 0, 43, 42}); 
-    }
+    for(int i = 0; i < 14; ++i) playerAnimRect.push_back(sf::IntRect{43 * i, 0, 43, 42}); 
     playerSprite = new Player({static_cast<float>(GameComponents.screenWidth / 2), static_cast<float>(GameComponents.screenHeight) - 65}, sf::Vector2f{1.5f,1.5f}, "assets/sprites/player.png");
     playerSprite->setAnimation(playerAnimRect);
     playerSprite->setRects(playerCurrentIndex); 

@@ -34,7 +34,7 @@ protected:
     sf::Vector2f size;
     sf::Texture* skin = nullptr;
     sf::Sprite* spriteCreated;
-    bool visibleState ;
+    bool visibleState;
     bool moveState;
     float speed;
     float gravity; 
