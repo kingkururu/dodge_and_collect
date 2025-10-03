@@ -1,59 +1,122 @@
-Made on August 2024 by Sunmyoung Yun
-This is my second mini-game project with C++ & SFML
+# Dodge and Collect 
 
---------------------------------------------------------- HOW TO OPEN AND LAUNCH GAME
-1)  Clone repo in VScode
-2)  Type "make" in VScode terminal
-3)  TYpe "./ASAtut" in VScode terminal
+A 2D dodge and collect game built with C++ and SFML, featuring dynamic sprite animations and simple gameplay mechanics.
 
---------------------------------------------------------- GAME PLAY
-This is a standard dodge and collect game. You have 5 hearts each, which will decrement by 1 when you hit a rain and by 3 when you get hit by a lightning bolt. 
-Your aim is to hit as many coins as possible before you die. 1 coin equals 100 points. 
-
-Lightning bolts and rains get re-spawned by decreasing time intervals. Good luck!
-
-Press (A) key to move the player left
-Press (D) key to move the player right
-Press (B) key to restart game
-
---------------------------------------------------------- ASSET SOURCES
-
-SPRITES:
-
-Main player sprite
-https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/ 
-
-Coin sprite
-https://www.vecteezy.com/vector-art/2695182-golden-coin-with-star-icon-in-pixel-style-vector-illustration
-
-Lightning sprite
-https://craftpix.net/freebies/free-animated-explosion-sprite-pack/?num=1&count=21&sq=lightning&pos=6
-
-SOUND: 
-
-Lighting sound 
-https://freesound.org/people/newlocknew/sounds/696391/
-
-Coin sound
-https://freesound.org/people/LoafDV/sounds/554803/
-
-Raindrop sound
-https://freesound.org/people/rombart/sounds/186747/
-
-Player dead (game end) sound
-https://freesound.org/people/Khrinx/sounds/333694/ 
-
-Background music
-https://pixabay.com/music/video-games-flat-8-bit-gaming-music-instrumental-211547/
-
-FONT:
-
-Pixel font
-https://www.dafont.com/llpixel.font
-
---------------------------------------------------------- GAME PLAY SCREENSHOTS
+## GAME PLAY SCREENSHOTS
 
 ![Gameplay Screenshot](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/screenshot1.png)
-![Gameplay Screenshot2](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/Screenshot2.png)
-![Gameplay Screenshot3](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/screenshot3.png)
+![Gameplay Screenshot 2](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/Screenshot2.png)
+![Gameplay Screenshot 3](https://github.com/kingkururu/dodge_and_collect_sfml_game/blob/7048d6198fbc1bb4d38b9a0891bf4af93c9bfefd/readmescreenshot/screenshot3.png)
 
+## Objective
+
+Collect as many coins as possible while avoiding falling rain and lightning bolts. You start with 5 hearts, and the challenge intensifies as the game progresses with decreasing spawn intervals!
+
+## How to Play
+
+- **Movement**: Use `A` key to move left, `D` key to move right
+- **Goal**: Collect coins (100 points each) while avoiding obstacles
+- **Health System**: 
+  - Start with 5 hearts
+  - Rain hits: -1 heart
+  - Lightning strikes: -3 hearts
+- **Restart**: Press `B` after game over to play again
+
+## Technical Features
+
+- **Engine**: SFML (Simple and Fast Multimedia Library)
+- **Language**: C++
+- **Architecture**: Object-oriented design with sprite animation system
+- **Physics**: Custom collision detection and entity management (raycast precollision check and AABB)
+- **Audio**: Integrated sound effects and background music
+- **Sprites**: Animated character sprites with frame-based animation
+
+## Building & Running
+
+### Prerequisites
+- SFML 2.x library
+- C++ compiler (GCC/Clang)
+- Make
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/kingkururu/dodge_and_collect
+   cd dodge_and_collect (location will be different)
+   ```
+
+2. **Build the game**:
+   ```bash
+   make
+   ```
+
+3. **Run the game**:
+   ```bash
+   ./run
+   ```
+
+### Alternative Setup (macOS with Homebrew)
+
+1. **Install SFML**:
+   ```bash
+   # Install Homebrew if not already installed
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+   # Install SFML
+   brew install sfml@2
+   ```
+
+2. **Configure PATH** (add to ~/.zshrc or ~/.bash_profile):
+   ```bash
+   export PATH="/opt/homebrew/bin:$PATH"
+   export PATH="/opt/homebrew/opt/sfml@2/bin:$PATH"
+   ```
+
+## Project Structure
+
+```
+dodge_and_collect_sfml_game/
+├── assets/        # Game assets (sprites, sounds)
+├── game/          # Core logics
+├── main           # Entry point
+├── .gitignore     # Entry point
+├── ReadMe         # Entry point
+└── Makefile       # Build configuration
+```
+
+## Assets
+
+### Sprites
+- **Main player sprite**: [Free Pixel Art Tiny Hero Sprites](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/)
+- **Coin sprite**: [Golden Coin with Star Icon](https://www.vecteezy.com/vector-art/2695182-golden-coin-with-star-icon-in-pixel-style-vector-illustration)
+- **Lightning sprite**: [Free Animated Explosion Sprite Pack](https://craftpix.net/freebies/free-animated-explosion-sprite-pack/?num=1&count=21&sq=lightning&pos=6)
+
+### Sound Effects
+- **Lightning sound**: [Thunder Sound Effect](https://freesound.org/people/newlocknew/sounds/696391/)
+- **Coin sound**: [Coin Collection Sound](https://freesound.org/people/LoafDV/sounds/554803/)
+- **Raindrop sound**: [Rain Drop Sound](https://freesound.org/people/rombart/sounds/186747/)
+- **Player dead sound**: [Game Over Sound](https://freesound.org/people/Khrinx/sounds/333694/)
+- **Background music**: [8-bit Gaming Music](https://pixabay.com/music/video-games-flat-8-bit-gaming-music-instrumental-211547/)
+
+### Font
+- **Pixel font**: [LLPixel Font](https://www.dafont.com/llpixel.font)
+
+## Key Learning Outcomes
+
+- Game development fundamentals with SFML
+- Object-oriented programming in C++
+- 2D graphics rendering and sprite management
+- Real-time input handling and game loops
+- Collision detection algorithms
+- Audio system integration
+- Sprite animation and frame management
+- Entity lifetime management and pooling systems
+
+## Game Mechanics
+
+This is a standard dodge and collect game featuring:
+- **Dynamic Difficulty**: Lightning bolts and rain spawn at decreasing time intervals
+- **Scoring System**: 1 coin = 100 points
+- **Health Management**: Strategic gameplay with limited hearts
+- **Responsive Controls**: Smooth left/right movement mechanics

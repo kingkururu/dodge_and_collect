@@ -302,7 +302,7 @@ void GameManager::handleGameEvents(){
     if(GameEvents.gameEnd){
         endingText.append(std::to_string(GameComponents.globalTime));
         endingText.append(" seconds\n press B to replay");
-        TextClass* endMessage1 = new TextClass({15, static_cast<float>(GameComponents.screenHeight)/3}, 40, sf::Color::Magenta, "assets/fonts/pixelFont.ttf", endingText);
+        TextClass* endMessage1 = new TextClass({15, static_cast<float>(GameComponents.screenHeight)/3}, 40, sf::Color::Magenta, "assets/fonts/arial.ttf", endingText);
         endMessage.push_back(endMessage1);
         
         backgroundMusic->returnMusic()->stop();
